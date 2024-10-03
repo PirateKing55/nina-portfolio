@@ -17,7 +17,7 @@ export default function Media() {
         },
         {
             link: "https://wheatoncollegelyons.com/sports/womens-swimming-and-diving/roster/nina-greenwood/4221",
-            src: "/media/nina_swimming_cheverus.png",
+            src: "/media/nina_2017-18.png",
             title: "Nina Greenwood - 2017-18 - Women's Swimming and Diving",
         },
         {
