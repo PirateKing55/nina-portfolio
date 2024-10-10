@@ -44,10 +44,13 @@ export default function FirstSection() {
 					Nina Greenwood
 				</motion.h1>
 				<motion.p className="text-foreground  z-20" variants={childVariants}>
-					Nina Greenwood is the founder and CEO of Happy Plum, an Ed-Tech startup revolutionising
-					the language learning space. A lifelong educator and passionate teacher and entrepreneur
-					who's worked with students of all ages ranging from 1-high school.
-				</motion.p>
+          Nina Greenwood is the founder and CEO of Happy Plum, an Ed-Tech startup revolutionising the language learning space. A lifelong educator and passionate teacher and entrepreneur who's worked with students of all ages ranging from 1-high school.
+          <br />
+          <br />I hold a strong foundation in education, having studied at a private school and worked as an elementary and middle school teacher, where I gained valuable insights into the learning needs of students and the challenges within the US education system. My experience in the classroom directly informed my decision to pursue graduate studies in education, with the goal of driving meaningful innovation in the sector.
+          <br />
+          Recently, I have a column in one of the major media channels. This recognition highlights the impact of my work in the ed-tech industry, where I am focused on creating engaging and effective language learning solutions for Prek students. I specialize in providing individualized, in-home instruction, offering a personalized learning experience tailored to each student’s unique needs and goals. My approach ensures that students receive focused attention in a comfortable, familiar environment, fostering greater engagement and accelerated language acquisition. Through these one-on-one
+          sessions, I am able to closely monitor progress and adjust teaching strategies to maximize learning outcomes.
+        </motion.p>
 			</div>
 			{/* Image with staggered animation */}
 			<motion.div
