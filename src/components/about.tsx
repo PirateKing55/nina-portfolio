@@ -1,13 +1,6 @@
 "use client";
 
-import {
-	Dialog,
-	DialogContent,
-	DialogDescription,
-	DialogHeader,
-	DialogTitle,
-	DialogTrigger,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
@@ -16,91 +9,89 @@ import { ScrollArea } from "./ui/scroll-area";
 import Link from "next/link";
 
 export default function AboutSection() {
-	const { ref: ref1, inView: inView1 } = useInView({
-		triggerOnce: true,
-		threshold: 0.3,
-	});
+  const { ref: ref1, inView: inView1 } = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+  });
 
-	// Parent variants for staggering children animations
-	const containerVariants = {
-		hidden: { opacity: 0 },
-		visible: {
-			opacity: 1,
-			transition: {
-				staggerChildren: 0.3, // 0.3 seconds delay between each item
-			},
-		},
-	};
+  // Parent variants for staggering children animations
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3, // 0.3 seconds delay between each item
+      },
+    },
+  };
 
-	// Child variants for individual items animation
-	const childVariants = {
-		hidden: { opacity: 0, y: 50 },
-		visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-	};
+  // Child variants for individual items animation
+  const childVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
 
-	return (
-		<motion.div
-			ref={ref1}
-			initial="hidden"
-			animate={inView1 ? "visible" : "hidden"}
-			variants={containerVariants} // Parent container to stagger children
-			className="common-style relative grid grid-cols-1 md:grid-cols-2 gap-5"
-			id="about"
-		>
-			{/* Left side: image */}
-			<motion.div
-				variants={childVariants}
-				className="z-10 flex items-center justify-center"
-			>
-				{/* <Link className="w-fit" href={"https://happy-plum.com"} target="_blank"> */}
-				<Image
-					src="/happyPlumLogo.jpeg"
-					alt="Happy Plum Logo"
-					width={950}
-					height={955}
-					className="w-2/3"
-				/>
-				{/* </Link> */}
-			</motion.div>
+  return (
+    <motion.div
+      ref={ref1}
+      initial="hidden"
+      animate={inView1 ? "visible" : "hidden"}
+      variants={containerVariants} // Parent container to stagger children
+      className="common-style relative grid grid-cols-1 md:grid-cols-2 gap-5"
+      id="about"
+    >
+      {/* Left side: image */}
+      <motion.div variants={childVariants} className="z-10 flex items-center justify-center">
+        {/* <Link className="w-fit" href={"https://happy-plum.com"} target="_blank"> */}
+        <Image src="/happyPlumLogo.jpeg" alt="Happy Plum Logo" width={950} height={955} className="w-2/3" />
+        {/* </Link> */}
+      </motion.div>
 
-			{/* Right side: text and stats */}
-			<motion.div className="flex flex-col justify-center gap-5">
-				<motion.p variants={childVariants} className="text-card">
-					About
-				</motion.p>
+      {/* Right side: text and stats */}
+      <motion.div className="flex flex-col justify-center gap-5">
+        <motion.p variants={childVariants} className="text-card">
+          About
+        </motion.p>
 
-				<motion.h1 variants={childVariants} className="text-3xl font-bold">
-					CEO and founder of <a className='underline' href='https://happy-plum.com' target='_blank'>Happy Plum</a>
-				</motion.h1>
+        <motion.h1 variants={childVariants} className="text-3xl font-bold">
+          CEO and founder of{" "}
+          <a className="underline" href="https://happy-plum.com" target="_blank">
+            Happy Plum
+          </a>
+        </motion.h1>
 
-				<motion.p variants={childVariants} className="text-foreground-secondary">
-					Happy Plum is a gen AI-powered ed-tech platform focused on transforming
-					language learning for pre-K to K-12 students by connecting the student,
-					the parent, and the teacher in the learning process. Our mission is to
-					create engaging, personalized learning experiences that foster a love
-					for languages from an early age.
-				</motion.p>
+        <motion.p variants={childVariants} className="text-foreground-secondary">
+          Happy Plum is a gen AI-powered ed-tech platform focused on transforming language learning app for preschool students by connecting the student, the parent, and the teacher in the learning process. Our mission is to create engaging, personalized learning experiences that foster a love for languages from an early age.
+        </motion.p>
 
-				<motion.p variants={childVariants} className="text-foreground-secondary">
-					<strong>Vision: </strong>
-					To impact the most number of pre-K and K-12 students worldwide with our Ed-Tech platform.
-				</motion.p>
+        <motion.p variants={childVariants} className="text-foreground-secondary">
+          <strong>Vision: </strong>
+          To impact the most number of pre-K students worldwide with our Ed-Tech platform.
+        </motion.p>
 
-				<motion.p variants={childVariants} className="text-foreground-secondary">
-					<strong>Future Goals: </strong>
-					I see Happy Plum capturing the US market and would like to expand to asia
-					and europe, and be the global leader in language learning solutions.
-				</motion.p>
+        <motion.p variants={childVariants} className="text-foreground-secondary">
+          <strong>Future Goals: </strong>I see Happy Plum capturing the US market and would like to expand to <b>ASIA</b> and <b>EUROPE</b>, and be the global leader in language learning solutions.
+        </motion.p>
 
-				<motion.ul variants={childVariants} className="text-foreground-secondary">
-					<strong>Highlighted Achievements:</strong>
-					<li>2015 US Department of State <a className='underline' href='https://www.nsliforyouth.org/' target='_blank'>NSLIY</a></li>
-					<li>2018 US Department of State <a className='underline' href='https://clscholarship.org/' target='_blank'>CLS</a></li>
-					<li>5+ years experience in the education industry</li>
-				</motion.ul>
+        <motion.ul variants={childVariants} className="text-foreground-secondary">
+          <strong>Highlighted Achievements:</strong>
+          <li>
+            2015 US Department of State{" "}
+            <a className="underline" href="https://www.nsliforyouth.org/" target="_blank">
+              NSLIY
+            </a>
+          </li>
+          <li>
+            2018 US Department of State{" "}
+            <a className="underline" href="https://clscholarship.org/" target="_blank">
+              CLS
+            </a>
+          </li>
+          <li>5+ years experience in the education industry</li>
+        </motion.ul>
 
-				{/* Stats */}
-				{/* <motion.div variants={containerVariants} className="flex gap-5">
+        {/* Stats */}
+        {/* <motion.div variants={containerVariants} className="flex gap-5">
 					<motion.div variants={childVariants}>
 						<h1 className="text-xl md:text-4xl font-bold">14+</h1>
 						<p>Years of experience</p>
@@ -116,7 +107,7 @@ export default function AboutSection() {
 						<p>Funds Raised</p>
 					</motion.div>
 				</motion.div> */}
-				{/* <motion.div variants={childVariants} className="z-30">
+        {/* <motion.div variants={childVariants} className="z-30">
 					<Dialog>
 						<DialogTrigger asChild>
 							<button className="z-30 flex items-center gap-2 text-card underline underline-offset-2 hover:underline-offset-4 duration-150 hover:text-primary-hover">
@@ -202,7 +193,7 @@ export default function AboutSection() {
 						</DialogContent>
 					</Dialog>
 				</motion.div> */}
-			</motion.div>
-		</motion.div>
-	);
+      </motion.div>
+    </motion.div>
+  );
 }
