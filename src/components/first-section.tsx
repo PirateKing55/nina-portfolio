@@ -40,12 +40,13 @@ export default function FirstSection() {
           Nina Greenwood
         </motion.h1>
         <motion.p className="text-foreground  z-20" variants={childVariants}>
-          Nina Greenwood is the founder and CEO of Happy Plum, an Ed-Tech startup revolutionising the language learning space. A lifelong educator and passionate teacher and entrepreneur who's worked with students of all ages ranging from 1-high school.
+          Nina Greenwood is the founder and CEO of Happy Plum, an EdTech startup revolutionizing the language learning space. A lifelong educator and passionate teacher, she has worked with students of all ages, from preschool to high school.
+
           <br />
-          <br />I hold a strong foundation in education, having studied at a private school and worked as an elementary and middle school teacher, where I gained valuable insights into the learning needs of students and the challenges within the US education system. My experience in the classroom directly informed my decision to pursue graduate studies in education, with the goal of driving meaningful innovation in the sector.
+          <br />Nina possesses a strong foundation in education, having attended a private school and subsequently working as an elementary and middle school teacher. This experience provided her with valuable insights into the learning needs of students and the challenges within the U.S. education system. Motivated by her classroom experiences, she pursued graduate studies in education with the goal of driving meaningful innovation in the sector.
+
           <br />
-          Recently, I have a column in one of the major media channels. This recognition highlights the impact of my work in the ed-tech industry, where I am focused on creating engaging and effective language learning solutions for Prek students. I specialize in providing individualized, in-home instruction, offering a personalized learning experience tailored to each student’s unique needs and goals. My approach ensures that students receive focused attention in a comfortable, familiar environment, fostering greater engagement and accelerated language acquisition. Through these one-on-one
-          sessions, I am able to closely monitor progress and adjust teaching strategies to maximize learning outcomes.
+          Recently, Nina gained recognition through a column in Forbes magazine, highlighting the impact of her work in the EdTech industry. She focuses on creating engaging and effective language learning solutions for preschool students. Additionally, Nina's background in competitive diving and gymnastics has instilled in her a commitment to discipline and excellence, which she brings to her educational initiatives. Specializing in individualized, in-home instruction, she offers personalized learning experiences tailored to each student’s unique needs and goals. Her approach fosters greater engagement and accelerates language acquisition, as she closely monitors progress and adjusts teaching strategies to maximize learning outcomes.
         </motion.p>
       </div>
       {/* Image with staggered animation */}
