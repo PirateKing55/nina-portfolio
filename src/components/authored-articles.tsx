@@ -11,20 +11,31 @@ export default function AuthoredArticles() {
   // All the articles
   const articles = [
     {
-      link: "https://www.forbes.com/councils/forbesbusinesscouncil/2024/09/23/from-classrooms-to-boardrooms-ais-transformative-role/",
-      src: "/articles/nina_article1.png",
-      title: "From Classrooms To Boardrooms: AI's Transformative Role",
-    },
+      link: "https://www.forbes.com/councils/forbesbusinesscouncil/2025/02/03/5-trends-shaping-preschool-language-education-in-2025/",
+      src: "/articles/nina_article3.png",
+      title: "5 Trends Shaping Preschool Language Education In 2025",
+    }, 
     {
-      link: "https://www.forbes.com/councils/forbesbusinesscouncil/2024/09/11/how-leaders-can-cultivate-emotional-intelligence/",
+      link: "https://www.forbes.com/councils/forbesbusinesscouncil/2024/11/26/how-the-preschool-education-industry-can-apply-storyfication-to-language-learning/",
       src: "/articles/nina_article2.png",
-      title: "How Leaders Can Cultivate Emotional Intelligence",
-    },
+      title: "How The Preschool Education Industry Can Apply Storyfication To Language Learning",
+    }, 
     {
       link: "https://www.forbes.com/councils/forbesbusinesscouncil/2024/10/21/trends-and-strategies-for-business-leaders-in-language-education/",
-      src: "/articles/nina_article3.png",
+      src: "/articles/nina_article1.png",
       title: "Trends And Strategies For Business Leaders In Language Education",
-    },
+    },  
+    // {
+    //   link: "https://www.forbes.com/councils/forbesbusinesscouncil/2024/09/23/from-classrooms-to-boardrooms-ais-transformative-role/",
+    //   src: "/articles/nina_article1.png",
+    //   title: "From Classrooms To Boardrooms: AI's Transformative Role",
+    // },
+    // {
+    //   link: "https://www.forbes.com/councils/forbesbusinesscouncil/2024/09/11/how-leaders-can-cultivate-emotional-intelligence/",
+    //   src: "/articles/nina_article2.png",
+    //   title: "How Leaders Can Cultivate Emotional Intelligence",
+    // },
+    
   ];
 
   const [visibleArticles, setVisibleArticles] = useState(8); // Initially show 8 articles
