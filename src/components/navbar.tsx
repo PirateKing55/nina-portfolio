@@ -45,7 +45,7 @@ export default function Navbar() {
 			>
 				<div className="hidden lg:flex justify-center gap-5 animate-fadeIn ">
 					<p className="text-foreground cursor-pointer hover:text-foreground hover:underline duration-300">
-						<Link href="#about">About Me</Link>
+						<Link href="#about">About</Link>
 					</p>
 					<p className="text-foreground cursor-pointer hover:text-foreground hover:underline duration-300">
 						<Link href="#featured-in">Featured In</Link>
