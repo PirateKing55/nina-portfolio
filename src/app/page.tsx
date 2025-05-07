@@ -23,41 +23,12 @@ export default function Home() {
 	return (
 		<div className="bg-background text-foreground">
 			<Navbar />
-			<div className="hidden md:block">
+			<div className="hidden md:block pt-12">
 				<FirstSection />
-
-				{/* Featured Slider */}
-
-				{/* <motion.div
-					ref={ref}
-					initial={{ opacity: 0 }}
-					animate={inView ? { opacity: 1 } : {}}
-					transition={{ duration: 0.8 }}
-					className="px-5 pt-5 md:px-40 relative"
-				>
-					<div className="fade-effect-wrapper relative flex overflow-x-hidden space-x-14">
-						<div className="space-x-14 animate-marquee whitespace-nowrap">
-							<FeaturedCompanies />
-						</div>
-						<div className="absolute top-0 space-x-14 animate-marqueeOpposite whitespace-nowrap">
-							<FeaturedCompanies />
-						</div>
-					</div>
-				</motion.div> */}
-
-				{/* About */}
 
 				<AboutSection />
 			</div>
 			<Mobile />
-
-			{/* <div className="common-style relative" id="featured-in">
-				<FeaturedVideos />
-			</div> */}
-
-			{/* <div className="common-style relative" id="publications">
-				<Publications />
-			</div> */}
 
 			<div className="px-5 md:px-40 min-h-fit py-5 md:py-10" id="featured-in">
 				<Media />
@@ -65,9 +36,6 @@ export default function Home() {
 			<div className="px-5 md:px-40 min-h-fit py-5 md:py-10 mb-10" id="articles">
 				<AuthoredArticles />
 			</div>
-			{/* <div className="common-style relative" id="papers">
-				<PublishedPapers />
-			</div> */}
 
 			<Footer />
 		</div>
