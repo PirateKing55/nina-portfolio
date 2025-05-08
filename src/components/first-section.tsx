@@ -44,7 +44,7 @@ export default function FirstSection() {
 				</motion.h1>
 				<motion.p className="text-foreground  z-20" variants={childVariants}>
 					I'm Nina Greenwood, the founder and CEO of Happy Plum, an EdTech
-					startup revolutionizing the language learning space. A lifelong
+					startup revolutionizing the Ed-Tech using Gen-AI space. A lifelong
 					educator and passionate teacher, I have worked with students of all
 					ages, from preschool to high school.
 					<br />
